@@ -290,7 +290,7 @@ figure figcaption {
 
 #colorlib-hero {
   min-height: 500px;
-  background: #68f7f7 url(../images/loader.gif) no-repeat center center;
+  background: white url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   margin-bottom: 10em;
@@ -1289,6 +1289,9 @@ span {
   width: 100%;
   display: block;
   margin-bottom: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .project .desc {
@@ -1297,7 +1300,8 @@ span {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2c98f0;
+  border-radius: 10px;
+  background: rgba(230, 230, 230, 0.9);
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1305,7 +1309,15 @@ span {
 
 .project .desc .con {
   padding: 20px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   height: 300px;
 }
@@ -1335,10 +1347,11 @@ span {
 }
 
 .project .desc h3 {
+  position: absolute;
   font-family: "Quicksand", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: capitalize;
   letter-spacing: 1px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -1351,7 +1364,7 @@ span {
 }
 
 .project .desc h3 a {
-  color: #68f7f7;
+  color: #105a6d;
 }
 
 .project .desc span {

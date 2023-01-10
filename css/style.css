@@ -333,8 +333,7 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #colorlib-hero .flexslider .flex-control-nav {
-    right: 20px;
-    top: 100px;
+    display: none;
   }
 }
 
@@ -448,6 +447,7 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+  font-weight: 600;
   color: #000;
   border: 1px solid #000;
   background: transparent !important;
